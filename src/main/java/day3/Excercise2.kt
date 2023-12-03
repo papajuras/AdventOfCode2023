@@ -77,8 +77,8 @@ fun saveAllAsterisksAroundNumber(
     }
     // check column on the right
     for (i in rowNumber - 1..rowNumber + 1) {
-        if (isAsterisk(charactersMatrix[i][numberStart + 1])) {
-            val asteriskLocation = AsteriskLocation(numberStart + 1, i)
+        if (isAsterisk(charactersMatrix[i][numberEnd + 1])) {
+            val asteriskLocation = AsteriskLocation(numberEnd + 1, i)
             saveLocation(asteriskLocation, rowNumber, numberStart, numberEnd, charactersMatrix)
         }
     }
